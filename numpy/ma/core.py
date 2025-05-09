@@ -8119,7 +8119,7 @@ def choose(indices, choices, out=None, mode='raise'):
     return d
 
 
-def round_(a, decimals=0, out=None):
+def round(a, decimals=0, out=None):
     """
     Return a copy of a, rounded to 'decimals' places.
 
@@ -8174,8 +8174,6 @@ def round_(a, decimals=0, out=None):
             out._mask = getmask(a)
         return out
 
-
-round = round_
 
 
 def _mask_propagate(a, axis):
